@@ -32,6 +32,8 @@ jobs:
         password-secret: ${{ secrets.password }}
         solution-name: ALMTest
         solution-output-file: out/exported/ALMLab.zip
+        client-secret: ${{ secrets.password }}
+        tenant-id: '56ba767f-bc84-4565-8a33-0ee9e18236cc' 
 
     - name: unpack-solution action
       uses: microsoft/powerplatform-actions/unpack-solution@v0

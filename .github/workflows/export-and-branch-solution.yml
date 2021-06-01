@@ -19,17 +19,16 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        environment-url: 'https://orgab2fee26.crm4.dynamics.com'
-        user-name: 'TestRegMag_059a7e3f-6eb0-4f1d-b265-c7c6b073cb67@ab6cc1e2-ab58-4ce7-bccf-d82e573b3c1f.com'
-        password-secret: ${{ secrets.password }}
+        app-id: '059a7e3f-6eb0-4f1d-b265-c7c6b073cb67'
+        client-secret: ${{ secrets.password }}
+        tenant-id: '56ba767f-bc84-4565-8a33-0ee9e18236cc' 
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
         environment-url: 'https://orgab2fee26.crm4.dynamics.com'
-        app-id: '059a7e3f-6eb0-4f1d-b265-c7c6b073cb67'
-        client-secret: ${{ secrets.password }}
-        tenant-id: 56ba767f-bc84-4565-8a33-0ee9e18236cc 
+        AppID: '059a7e3f-6eb0-4f1d-b265-c7c6b073cb67'
+        password-secret: ${{ secrets.password }}
         solution-name: ALMTest
         solution-output-file: out/exported/ALMLab.zip
 

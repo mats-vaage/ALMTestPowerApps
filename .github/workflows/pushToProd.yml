@@ -46,7 +46,7 @@ jobs:
         tenant-id: '56ba767f-bc84-4565-8a33-0ee9e18236cc'
         password-secret: ${{ secrets.password }}
         client-secret: ${{ secrets.password }}
-        solution-name: ALMLab
+        solution-name: MainSolution
         managed: true
         solution-output-file: out/ship/ALMLab.zip
 

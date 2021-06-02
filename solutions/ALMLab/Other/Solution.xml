@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ImportExportXml version="9.2.21051.138" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
-    <UniqueName>ALMTest</UniqueName>
+    <UniqueName>MagnusBranchTest</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="ALMTest" languagecode="1033" />
+      <LocalizedName description="MagnusBranchTest" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.3</Version>
+    <Version>1.0.0.0</Version>
     <Managed>0</Managed>
     <Publisher>
-      <UniqueName>almtest</UniqueName>
+      <UniqueName>MangusPub</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="ALMTest" languagecode="1033" />
+        <LocalizedName description="MagnusPub" languagecode="1033" />
       </LocalizedNames>
       <Descriptions />
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
-      <CustomizationPrefix>almtest</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>50370</CustomizationOptionValuePrefix>
+      <CustomizationPrefix>new</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -78,9 +78,14 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="almtest_kaker" behavior="0" />
-      <RootComponent type="300" schemaName="almtest_almtestapp_d761c" behavior="0" />
+      <RootComponent type="1" schemaName="almtest_kaker" behavior="2" />
+      <RootComponent type="300" schemaName="new_almtestappmagnus_d9c31" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="almtest_kaker" displayName="Kaker" solution="Active" />
+        <Dependent type="1" schemaName="almtest_kaker" displayName="Kaker" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

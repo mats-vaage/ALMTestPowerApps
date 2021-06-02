@@ -39,14 +39,14 @@ jobs:
       uses: microsoft/powerplatform-actions/unpack-solution@v0
       with:
         solution-file: out/exported/MagnusBranchTest.zip
-        solution-folder: out/solutions/MagnusBranchTest
+        solution-folder: out/solutions/ALMLab
         solution-type: 'Unmanaged'
         overwrite-files: true
 
     - name: branch-solution, prepare it for a PullRequest
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
-        solution-folder: out/solutions/MagnusBranchTest
-        solution-target-folder: solutions/MagnusBranchTest
+        solution-folder: out/solutions/ALMLab
+        solution-target-folder: solutions/ALMLab
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true
